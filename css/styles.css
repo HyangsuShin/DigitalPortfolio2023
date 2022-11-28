@@ -1,0 +1,342 @@
+/*common*/
+html {
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
+}
+
+body {
+    color: black;
+    position: relative;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.margin10 {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.item {
+    scroll-snap-align: start;
+}
+
+h2 {
+    text-align: center;
+    color: brown;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header {
+    background: linear-gradient(pink, transparent);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+}
+
+.bookmark {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-content: center;
+}
+
+.link {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    margin: 10px 50px;
+    padding: 10px;
+    text-decoration: none;
+    border: 5px solid transparent;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+.link:hover {
+    background-color: rgb(250, 148, 165);
+    border: 5px solid white;
+}
+
+/*footer*/
+
+#contact {
+    scroll-snap-stop: always;
+    scroll-snap-align: end;
+    border-top: 5px dotted pink;
+    border-top-left-radius: 100% 100%;
+    border-top-right-radius: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+#contact span {
+    width: 50vh;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+#contact img {
+    height: 5vh;
+}
+
+/*index.html*/
+/*introduction*/
+#introduction {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#introduction .inner {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#introduction .picture {
+    display: block;
+    /*padding-top: 5%;*/
+    margin-left: auto;
+    margin-right: 5% ;
+    width: 25%;
+}
+
+#introduction .introduction {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+#introduction .title {
+    margin: auto auto 0 auto;
+    font-size: 50px;
+    font-weight: bold;
+    color: pink;
+    font-family: cursive;
+}
+
+.about_me {
+    margin: 16px auto auto auto;
+    font-family: sans-serif;
+    line-height: 1.2;
+    color: rgb(173, 64, 100);
+}
+
+/*capability*/
+
+#capability {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: linear-gradient(white, rgb(250, 192, 203), white);
+
+}
+
+#capability table {
+    display: table;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 70%;
+    height: 80vh;
+}
+
+#capability thead {
+    font-size: 50px;
+    color: rgb(211, 128, 156);
+    font-weight: bold;
+    font-family: cursive;
+}
+
+#capability tr.row1 img {
+    margin-top: 10%;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+#capability tr.row2 img {
+    margin-top: 10%;
+    width: 30%;
+    box-sizing: border-box;
+}
+
+#capability tr.row3 img {
+    margin-top: 5%;
+    box-sizing: border-box;
+}
+
+
+/*portfolio.html*/
+
+/*Greetings*/
+
+#Greetings {
+    margin-right: 10%;
+    margin-left: 10%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#Greetings>.hello {
+    clear: left;
+}
+
+#Greetings .para1 {
+    font-size: 50px;
+    font-family: cursive;
+    font-weight: bold;
+    color: pink;
+}
+
+#Greetings #name,
+#dream {
+    text-shadow: 2px 2px 5px red;
+}
+
+#Greetings .para2 {
+    font-size: 30px;
+    width: 800px;
+    font-family: sans-serif;
+    margin-top: 50px;
+    font-style: italic;
+    line-height: 1.2;
+    color: rgb(211, 128, 156);
+}
+
+/*recent works*/
+
+#works th {
+    font-size: 30px;
+    text-align: right;
+    color: rosybrown;
+    text-shadow: 2px 2px 2px rgb(196, 169, 169);
+    border-bottom: 5px dotted rosybrown;
+    padding-bottom: 2%;
+    margin-bottom: 3%;
+}
+
+#works .table {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#works table {
+    height: 80vh;
+    width: 100%;
+    text-align: center;
+}
+
+#works td {
+    vertical-align: middle;
+}
+
+#works .row1>.image img {
+    width: 60%;
+    border-radius: 10%;
+}
+
+#works .row2>.image img {
+    width: 60%;
+    border-radius: 10%;
+}
+
+#works .row3>.image img {
+    width: 60%;
+    border-radius: 10%;
+}
+
+
+#works .discription h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+
+#works .discription p {
+    padding: 0 10%;
+    box-sizing: border-box;
+}
+
+#works table td {
+    border: 5px dotted rosybrown;
+
+}
+
+#works table tr:first-child td {
+    border-top: 0;
+    border-bottom: 0;
+}
+
+#works table tr td:first-child {
+    border-left: 0;
+}
+
+#works table tr:last-child td {
+    border: 0;
+}
+
+#works table tr td:last-child {
+    border-right: 0;
+}
+
+/*resume.html*/
+
+#resume {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#resume iframe {
+    width: 80%;
+    height: 70vh;
+}
+
+/*contact.html*/
+
+#sendme {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sendme .Say {
+    font-size: 100px;
+    font-family: cursive;
+    color: pink;
+}
+
+#sendme .days {
+    font-size: 20px;
+    font-family: cursive;
+    color: pink;
+    margin: 5% 0;
+}
+
+#sendme form {
+    display: block;
+}
+
+#sendme label {
+    font-size: 20px;
+    font-weight: bold;
+    color: pink;
+}
